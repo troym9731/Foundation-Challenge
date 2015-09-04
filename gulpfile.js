@@ -20,3 +20,13 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('./css'));
 });
 
+/**
+ * Watch
+ */
+
+gulp.task('watch', function() {
+  gulp.watch('./sass/*.scss', ['sass'])
+});
+
+gulp.task('default', ['serve', 'sass', 'watch']);
+
