@@ -8,6 +8,10 @@ html {
   font: inherit;
 }
 
+h1, p {
+  margin: 0;
+}
+
 .top-bar-section ul, .top-bar-section ul li, .top-bar-section ul li a {
   background: transparent !important;
 }
@@ -27,5 +31,5 @@ html {
     display: block;
     width: 100%;
     height: auto;
-    max-height: 500px;
+    max-height: 650px;
 }
