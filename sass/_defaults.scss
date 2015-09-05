@@ -1,10 +1,31 @@
 html {
   box-sizing: border-box;
-  font: 12pt 'Open Sans', Arial;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
   color: inherit;
   font: inherit;
+}
+
+.top-bar-section ul, .top-bar-section ul li, .top-bar-section ul li a {
+  background: transparent !important;
+}
+
+.top-bar-section .has-dropdown > a:after {
+  border-top-style: none;
+}
+
+.fullwidth {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 100%;
+}
+
+#owl .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 500px;
 }

@@ -20,7 +20,7 @@ gulp.task('serve', serve({
 gulp.task('sass', function() {
   return gulp.src('./sass/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(minifyCss().on('error', gutil.log))
+    // .pipe(minifyCss().on('error', gutil.log))
     .pipe(gulp.dest('./css'));
 });
 

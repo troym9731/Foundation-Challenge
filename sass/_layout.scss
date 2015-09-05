@@ -1,9 +1,60 @@
-
-
-/** Header **/
+.hero {
+  min-height: 500px;
+  position: relative;
+}
 
 .decorative-bar {
   height: 20px;
   background-color: #000;
-  border-bottom: 3px solid rgb(238, 114, 17);
+  border-bottom: 3px solid $theme-color;
+}
+
+/** Header **/
+
+.primary-header {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  visibility: visible;
+
+  img {
+    margin-top: 10px;
+  }
+}
+
+.primary-nav {
+  background-color: transparent;
+
+  .top-bar-section a {
+    font-weight: 300;
+    padding: 12px !important;
+
+    &:hover {
+      background-color: $theme-color !important;
+    }
+  }
+
+  .top-bar-section ul.dropdown a {
+    padding: 0 18px !important;
+    margin: 2px;
+  }
+}
+
+.top-bar-section ul.dropdown li:not(.has-form) a:not(.button):active {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/** Footer **/
+
+.primary-footer {
+  background-color: #000;
+  color: #585858;
+  min-height: 300px;
+  text-align: center;
+
+  p {
+    padding: 15px;
+  }
 }
